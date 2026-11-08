@@ -108,29 +108,16 @@ function trendingLabel(link: QuickLink): string {
   jsonLd={jsonLd}
 >
   {/* ─────────────────────────────── Hero ─────────────────────────────── */}
-  <section class="relative flex min-h-[52vh] items-center overflow-hidden border-b border-border md:min-h-[68vh]">
-    {/* Subtle theme-color gradient backdrop — gives the hero a visual anchor
-        without requiring an image asset. Sits behind the watermark. */}
-    <div
-      aria-hidden="true"
-      class="pointer-events-none absolute inset-0 bg-gradient-to-br from-nav/8 via-transparent to-transparent"
-    />
-    {/* Faint game-name watermark — pure CSS, no image asset required. */}
-    <span
-      aria-hidden="true"
-      class="pointer-events-none absolute inset-x-0 top-1/2 -translate-y-1/2 select-none text-center text-[18vw] font-black leading-none text-foreground/[0.03] md:text-[14vw]"
-    >
-      {site.game.name}
-    </span>
-
-    <div class="relative mx-auto w-full max-w-7xl px-4 py-16 md:py-24">
-      <p class="text-sm font-semibold uppercase tracking-wider text-foreground">{hero.badge}</p>
+  <section class="wiki-hero border-b border-border">
+    <div class="wiki-hero-layout mx-auto max-w-7xl px-4">
+      <div>
+      <p class="wiki-hero-badge">{hero.badge}</p>
       <h1
-        class="mt-3 max-w-3xl bg-gradient-to-r from-foreground to-foreground/60 bg-clip-text text-4xl font-black tracking-tight text-transparent sm:text-5xl md:text-6xl lg:text-7xl"
+        class="mt-4 max-w-3xl text-4xl font-black tracking-tight text-white sm:text-5xl lg:text-7xl"
       >
         {hero.title}
       </h1>
-      <p class="mt-5 max-w-xl text-base text-muted-foreground md:text-lg">{hero.description}</p>
+      <p class="mt-5 max-w-xl text-base text-slate-200 md:text-lg">{hero.description}</p>
       <div class="mt-8 flex flex-wrap gap-3">
         {
           hero.ctaPrimary && (
@@ -138,7 +125,7 @@ function trendingLabel(link: QuickLink): string {
               href={site.social.official}
               target="_blank"
               rel="noopener noreferrer"
-              class="btn-primary"
+              class="wiki-hero-play"
             >
               <Icon name="lucide:play" class="mr-2 h-4 w-4" />
               {hero.ctaPrimary}
@@ -147,11 +134,29 @@ function trendingLabel(link: QuickLink): string {
         }
         {
           hero.ctaSecondary && (
-            <a href={listPath(NAVIGATION_CONFIG[1]?.key ?? 'guides', locale)} class="btn-outline">
+            <a href={listPath(NAVIGATION_CONFIG[1]?.key ?? 'guides', locale)} class="wiki-hero-guides">
               {hero.ctaSecondary}
             </a>
           )
         }
+      </div>
+      </div>
+      <div class="wiki-hero-art" aria-hidden="true">
+        <svg viewBox="0 0 420 310" fill="none">
+          <path d="M18 225 153 154 278 222 143 293Z" fill="#fc784a" fill-opacity=".25" stroke="#fc784a"/>
+          <path d="m143 293 135-71 122-58-133-71-114 61" stroke="#ff956a" stroke-opacity=".7"/>
+          <path d="m64 188 76-39 65 35-76 40Z" fill="#70e6c4"/>
+          <path d="M64 188v26l65 36v-26Z" fill="#22796e"/>
+          <path d="m129 224 76-40v26l-76 40Z" fill="#144b50"/>
+          <path d="m178 133 76-39 65 35-76 40Z" fill="#9af3d5"/>
+          <path d="M178 133v27l65 36v-27Z" fill="#2d8f7d"/>
+          <path d="m243 169 76-40v27l-76 40Z" fill="#195f60"/>
+          <path d="m277 81 63-32 53 29-63 33Z" fill="#c8fbe5"/>
+          <path d="M277 81v23l53 30v-23Z" fill="#4aab94"/>
+          <path d="m330 111 63-33v23l-63 33Z" fill="#23706b"/>
+          <path d="m138 175 58-31m61-33 50-27" stroke="#fff7d4" stroke-width="3" stroke-dasharray="5 7" stroke-linecap="round"/>
+          <path d="M222 27v24m-12-12h24m-164 72v14m-7-7h14m292 93v18m-9-9h18" stroke="#81ecd0" stroke-opacity=".75" stroke-width="2" stroke-linecap="round"/>
+        </svg>
       </div>
     </div>
   </section>
@@ -306,3 +311,44 @@ function trendingLabel(link: QuickLink): string {
     )
   }
 </LocaleLayout>
+
+<style>
+  .wiki-hero {
+    background: radial-gradient(ellipse at 78% 40%, #17413d, transparent 55%), #111a26;
+  }
+  .wiki-hero-layout {
+    display: grid;
+    align-items: center;
+    gap: 1.5rem;
+    padding-block: clamp(2.5rem, 6vw, 5.5rem);
+  }
+  .wiki-hero-badge {
+    display: inline-flex;
+    border: 1px solid #4d8a7d;
+    border-radius: 999px;
+    padding: 0.35rem 0.8rem;
+    color: #a2f0d8;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .wiki-hero-play, .wiki-hero-guides {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 0.65rem;
+    padding: 0.7rem 1rem;
+    font-weight: 700;
+  }
+  .wiki-hero-play { background: #9af3d5; color: #102724; }
+  .wiki-hero-play:hover { background: #c8fbe5; }
+  .wiki-hero-guides { border: 1px solid #8398a5; color: white; }
+  .wiki-hero-guides:hover { background: #253947; }
+  .wiki-hero-art svg { display: block; width: min(100%, 26rem); margin-inline: auto; }
+  @media (min-width: 768px) {
+    .wiki-hero-layout { grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); }
+  }
+  @media (max-width: 767px) {
+    .wiki-hero-art svg { width: min(100%, 15rem); }
+  }
+</style>
