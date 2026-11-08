@@ -73,7 +73,7 @@ export const site: SiteConfig = {
   name: 'Survive Your Ideas Wiki',
   shortName: 'SYI Wiki',
   description: 'English guides for Survive Your Ideas on Roblox, including how to play, how to choose ideas, and how to handle overlapping hazards.',
-  domain: 'survive-your-ideas-wiki.invalid',
+  domain: 'survive-your-ideas-wiki.pages.dev',
   tagline: 'Learn the round. Read the hazards. Stay alive.',
   legalNotice: 'Survive Your Ideas Wiki is an unofficial fan site and is not affiliated with Roblox or the game creator.',
   // Set a real address if you run no social channels — the contact page
