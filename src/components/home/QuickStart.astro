@@ -37,11 +37,11 @@ const open = sharedStrings.open ?? 'Open';
   <section class="section border-t border-border">
     <p class="text-sm font-semibold uppercase tracking-wider text-foreground">{badge}</p>
     <h2 class="mt-1 text-2xl font-bold tracking-tight md:text-3xl">{title}</h2>
-    <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4 md:mt-8">
+    <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 md:mt-8">
       {cards.map((card: StartCard) => (
         <a
           href={localizePath(card.href, locale)}
-          class="card group flex flex-col p-5"
+          class="card group flex flex-col p-5 transition hover:-translate-y-0.5 hover:border-nav md:p-6"
         >
           <div class="flex items-center justify-between">
             <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-nav/10 text-nav">
