@@ -13,3 +13,10 @@ Keep the codes report in draft until an in-game test. Keep code redemption as a 
 | Lucky Spin | Singular reward or menu label |
 | Lucky Spins | Plural reward quantity |
 | Word Mastery | Update feature name |
+
+## Evidence labels
+
+- **Verified against official metadata** confirms what the official record says as of the review date.
+- **Live tested** requires an in-game observation with date, steps and result. Do not infer a live test from a developer description or a screenshot from another account.
+- **Reported / recorded example** means cite the report or recording near the claim and limit it to the observed version or scenario.
+- **Source gap** means preserve the unsuccessful lookup or missing evidence. An unavailable announcement does not establish that the claim is false.
