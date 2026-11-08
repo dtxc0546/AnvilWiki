@@ -199,6 +199,20 @@
           "description": "Spot a climb you can reach and keep a second exit.",
           "icon": "lucide:flame",
           "href": "/guides/how-to-survive-lava/"
+        },
+        {
+          "number": "4",
+          "title": "Explore words and effects",
+          "description": "See two documented ways words change the arena.",
+          "icon": "lucide:book-open",
+          "href": "/guides/words-and-effects/"
+        },
+        {
+          "number": "5",
+          "title": "Understand your loadout",
+          "description": "Find your items and test them against a survival problem.",
+          "icon": "lucide:package",
+          "href": "/guides/items-and-loadouts/"
         }
       ]
     },

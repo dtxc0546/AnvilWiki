@@ -41,7 +41,7 @@ const open = sharedStrings.open ?? 'Open';
       {cards.map((card: StartCard) => (
         <a
           href={localizePath(card.href, locale)}
-          class="card group flex flex-col p-5 transition hover:-translate-y-0.5 hover:border-nav md:p-6"
+          class="field-card card group flex flex-col p-5 transition hover:-translate-y-0.5 md:p-6"
         >
           <div class="flex items-center justify-between">
             <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-nav/10 text-nav">
@@ -65,3 +65,9 @@ const open = sharedStrings.open ?? 'Open';
     </div>
   </section>
 )}
+
+<style>
+  .field-card { border-radius: 1.25rem; border-color: #ac91cc; box-shadow: 0 4px 0 #ac91cc55; }
+  .field-card:nth-child(2) { border-color: #84b699; box-shadow: 0 4px 0 #84b69955; }
+  .field-card:nth-child(3) { border-color: #d99d83; box-shadow: 0 4px 0 #d99d8355; }
+</style>

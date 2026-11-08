@@ -113,11 +113,11 @@ function trendingLabel(link: QuickLink): string {
       <div>
       <p class="wiki-hero-badge">{hero.badge}</p>
       <h1
-        class="mt-4 max-w-3xl text-4xl font-black tracking-tight text-white sm:text-5xl lg:text-7xl"
+        class="mt-4 max-w-3xl text-4xl font-black tracking-tight text-[#38305b] sm:text-5xl lg:text-7xl"
       >
         {hero.title}
       </h1>
-      <p class="mt-5 max-w-xl text-base text-slate-200 md:text-lg">{hero.description}</p>
+      <p class="mt-5 max-w-xl text-base text-[#514769] md:text-lg">{hero.description}</p>
       <div class="mt-8 flex flex-wrap gap-3">
         {
           hero.ctaPrimary && (
@@ -142,20 +142,19 @@ function trendingLabel(link: QuickLink): string {
       </div>
       </div>
       <div class="wiki-hero-art" aria-hidden="true">
-        <svg viewBox="0 0 420 310" fill="none">
-          <path d="M18 225 153 154 278 222 143 293Z" fill="#fc784a" fill-opacity=".25" stroke="#fc784a"/>
-          <path d="m143 293 135-71 122-58-133-71-114 61" stroke="#ff956a" stroke-opacity=".7"/>
-          <path d="m64 188 76-39 65 35-76 40Z" fill="#70e6c4"/>
-          <path d="M64 188v26l65 36v-26Z" fill="#22796e"/>
-          <path d="m129 224 76-40v26l-76 40Z" fill="#144b50"/>
-          <path d="m178 133 76-39 65 35-76 40Z" fill="#9af3d5"/>
-          <path d="M178 133v27l65 36v-27Z" fill="#2d8f7d"/>
-          <path d="m243 169 76-40v27l-76 40Z" fill="#195f60"/>
-          <path d="m277 81 63-32 53 29-63 33Z" fill="#c8fbe5"/>
-          <path d="M277 81v23l53 30v-23Z" fill="#4aab94"/>
-          <path d="m330 111 63-33v23l-63 33Z" fill="#23706b"/>
-          <path d="m138 175 58-31m61-33 50-27" stroke="#fff7d4" stroke-width="3" stroke-dasharray="5 7" stroke-linecap="round"/>
-          <path d="M222 27v24m-12-12h24m-164 72v14m-7-7h14m292 93v18m-9-9h18" stroke="#81ecd0" stroke-opacity=".75" stroke-width="2" stroke-linecap="round"/>
+        <svg viewBox="0 0 320 256" fill="none" shape-rendering="crispEdges">
+          <path d="M16 144h16v-12h40v-12h52v-12h76v12h48v12h40v12h16v52h-16v12h-40v12h-48v12h-76v-12H72v-12H32v-12H16Z" fill="#f7b9a6"/>
+          <path d="M16 144h16v-12h40v-12h52v-12h76v12h48v12h40v12h16v32h-16v12h-40v12h-48v12h-76v-12H72v-12H32v-12H16Z" fill="#ffdcc3"/>
+          <path d="M56 148h24v-12h48v-12h68v12h48v12h24v24h-24v12h-48v12h-68v-12H80v-12H56Z" fill="#a5d8ad"/>
+          <path d="M84 157h20v8H84Zm140 3h20v8h-20Zm-92 23h16v8h-16Z" fill="#74af91"/>
+          <path d="M101 134v-12h12v-12h16v24Zm101 8v-12h12v-12h16v24Z" fill="#fff0dc"/>
+          <path d="M124 80h12V56h16V44h36v12h16v24h12v64h-12v12h-68v-12h-12Z" fill="#52426e"/>
+          <path d="M136 84h12V68h8V56h28v12h8v16h12v52h-12v8h-44v-8h-12Z" fill="#f4e3ff"/>
+          <path d="M144 88h52v32h-8v12h-36v-12h-8Z" fill="#fff8ed"/>
+          <path d="M152 96h8v12h-8Zm28 0h8v12h-8Zm-16 20h12v4h-12Z" fill="#52426e"/>
+          <path d="M144 109h8v6h-8Zm44 0h8v6h-8Z" fill="#ef9eb8"/>
+          <path d="M248 56h8V44h8v12h12v8h-12v12h-8V64h-8ZM62 75h8V63h8v12h12v8H78v12h-8V83h-8Z" fill="#d48cad"/>
+          <path d="M228 27h8v8h-8ZM99 43h8v8h-8Zm-53 73h8v8h-8Zm232-18h8v8h-8Z" fill="#8d72bd"/>
         </svg>
       </div>
     </div>
@@ -313,8 +312,20 @@ function trendingLabel(link: QuickLink): string {
 </LocaleLayout>
 
 <style>
+  :global(main:has(.wiki-hero)) {
+    background:
+      radial-gradient(circle at 22% 38%, #e4d8fa80, transparent 36rem),
+      radial-gradient(circle at 85% 74%, #d7ecd880, transparent 34rem),
+      #fff0df;
+  }
+  :global(.dark main:has(.wiki-hero)) {
+    background:
+      radial-gradient(circle at 22% 38%, #47355780, transparent 36rem),
+      radial-gradient(circle at 85% 74%, #294d4580, transparent 34rem),
+      #262039;
+  }
   .wiki-hero {
-    background: radial-gradient(ellipse at 78% 40%, #213c59, transparent 58%), #101827;
+    background: radial-gradient(ellipse at 78% 40%, #ffefcf, transparent 55%), #eee6fc;
   }
   .wiki-hero-layout {
     display: grid;
@@ -324,10 +335,10 @@ function trendingLabel(link: QuickLink): string {
   }
   .wiki-hero-badge {
     display: inline-flex;
-    border: 1px solid #4d8a7d;
+    border: 1px solid #ac91cc;
     border-radius: 999px;
     padding: 0.35rem 0.8rem;
-    color: #a2f0d8;
+    color: #513d75;
     font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 0.12em;
@@ -340,10 +351,11 @@ function trendingLabel(link: QuickLink): string {
     padding: 0.7rem 1rem;
     font-weight: 700;
   }
-  .wiki-hero-play { background: #ffb47d; color: #271a14; }
-  .wiki-hero-play:hover { background: #ffd0aa; }
-  .wiki-hero-guides { border: 1px solid #8398a5; color: white; }
-  .wiki-hero-guides:hover { background: #253947; }
+  .wiki-hero-play { background: #624c92; color: white; }
+  .wiki-hero-play:hover { background: #503c7d; }
+  .wiki-hero-guides { border: 1px solid #9d83bf; color: #463368; }
+  .wiki-hero-guides:hover { background: #f8efff; }
+  .wiki-hero-art { border-radius: 2rem; background: #fff9ee90; border: 2px solid #fff9ee; box-shadow: 0 6px 0 #cdb9e85c; }
   .wiki-hero-art svg { display: block; width: min(100%, 26rem); margin-inline: auto; }
   @media (min-width: 768px) {
     .wiki-hero-layout { grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); }
