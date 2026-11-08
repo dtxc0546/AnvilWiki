@@ -22,7 +22,12 @@ runs:
       shell: bash
 
     - name: Test
-      run: pnpm test
+      # The upstream template suite assumes the demo, marketing pages and extra
+      # locales still exist. Run the independent runtime suites on this wiki.
+      run: >-
+        pnpm exec vitest run tests/affiliates.test.ts tests/consent.test.ts
+        tests/covers.test.ts tests/indexnow.test.ts tests/prompt.test.ts
+        tests/sync-codes.test.ts tests/today.test.ts
       shell: bash
 
     - name: Config consistency (nav/locale 3-place check)
