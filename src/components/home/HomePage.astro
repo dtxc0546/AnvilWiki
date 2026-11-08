@@ -134,7 +134,7 @@ function trendingLabel(link: QuickLink): string {
         }
         {
           hero.ctaSecondary && (
-            <a href={listPath(NAVIGATION_CONFIG[1]?.key ?? 'guides', locale)} class="wiki-hero-guides">
+            <a href={detailPath('guides', 'getting-started', locale)} class="wiki-hero-guides">
               {hero.ctaSecondary}
             </a>
           )
@@ -314,7 +314,7 @@ function trendingLabel(link: QuickLink): string {
 
 <style>
   .wiki-hero {
-    background: radial-gradient(ellipse at 78% 40%, #17413d, transparent 55%), #111a26;
+    background: radial-gradient(ellipse at 78% 40%, #213c59, transparent 58%), #101827;
   }
   .wiki-hero-layout {
     display: grid;
@@ -340,8 +340,8 @@ function trendingLabel(link: QuickLink): string {
     padding: 0.7rem 1rem;
     font-weight: 700;
   }
-  .wiki-hero-play { background: #9af3d5; color: #102724; }
-  .wiki-hero-play:hover { background: #c8fbe5; }
+  .wiki-hero-play { background: #ffb47d; color: #271a14; }
+  .wiki-hero-play:hover { background: #ffd0aa; }
   .wiki-hero-guides { border: 1px solid #8398a5; color: white; }
   .wiki-hero-guides:hover { background: #253947; }
   .wiki-hero-art svg { display: block; width: min(100%, 26rem); margin-inline: auto; }

@@ -168,16 +168,16 @@
       "secondary": "Browse guides"
     },
     "hero": {
-      "badge": "Survive Your Ideas",
+      "badge": "Roblox survival · Unofficial wiki",
       "title": "Survive Your Ideas Wiki",
-      "description": "English guides for Survive Your Ideas on Roblox, including how to play, how to choose ideas, and how to handle overlapping hazards.",
+      "description": "A word can turn the arena into a hazard. Learn what to do on your writing turn, how to get above lava, and how to keep a route open as new ideas appear.",
       "ctaPrimary": "Play on Roblox",
       "videoId": "",
-      "ctaSecondary": "Browse guides"
+      "ctaSecondary": "Read the beginner guide"
     },
     "start": {
       "badge": "Quick start",
-      "title": "New here?",
+      "title": "Get ready for your first round",
       "cards": [
         {
           "number": "1",
@@ -192,6 +192,13 @@
           "description": "Choose an idea and keep an escape route.",
           "icon": "lucide:compass",
           "href": "/guides/idea-and-hazard-tips/"
+        },
+        {
+          "number": "3",
+          "title": "Get above the lava",
+          "description": "Spot a climb you can reach and keep a second exit.",
+          "icon": "lucide:flame",
+          "href": "/guides/how-to-survive-lava/"
         }
       ]
     },
