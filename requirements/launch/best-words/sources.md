@@ -9,6 +9,12 @@ Questions: Which outcomes have been observed? What is situational?
 | This is a Roblox experience | https://www.roblox.com/games/77900175935766/Survive-Your-Ideas | Live listing | 2026-11-08 | Official listing |
 | LAVA is shown as a floor hazard | https://games.resuhive.com/survive-your-ideas/guide | Build number unconfirmed | 2026-11-08 | Recorded example. No ranking or repeatability established. |
 
+## Official evidence reviewed November 8, 2026
+
+| Claim | Source URL | Applicable version | Reviewed | Confidence |
+| --- | --- | --- | --- | --- |
+| The creator names tsunami, dinosaur, nuke and tacos as examples | https://games.roblox.com/v1/games?universeIds=10769671316 | Current public metadata. Game build number unavailable. | 2026-11-08 | Official examples. Exact input syntax, effects and strength are not established. |
+
 ## Evidence gaps
 
 - Official FAQ or patch notes: collect a direct link when available.
