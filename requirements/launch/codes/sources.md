@@ -17,6 +17,12 @@ Questions: What is reported? What is confirmed? How do I redeem it?
 | The official experience description and public community description do not list THANKYOU | https://games.roblox.com/v1/games?universeIds=10769671316 · https://groups.roblox.com/v1/groups/1111201510 | Current public metadata. Game build number unavailable. | 2026-11-08 | Verified absence in these descriptions at review. Does not establish whether the code works. |
 | The public group shout endpoint returned HTTP 404 | https://groups.roblox.com/v1/groups/1111201510/shout | Endpoint check | 2026-11-08 | Access/data gap. No conclusion about whether a developer announcement exists. |
 
+## Leads awaiting corroboration
+
+| Claim | Source URL | Applicable version | Reviewed | Confidence |
+| --- | --- | --- | --- | --- |
+| FIRSTUPDATE is reported as a possible code | https://togame.io/b/survive-your-ideas-codes/ | Unknown | 2026-11-08 | Single-source lead. Official confirmation, reward and redemption not verified. Excluded from the public list. |
+
 ## Evidence gaps
 
 - Official FAQ or patch notes: collect a direct link when available.

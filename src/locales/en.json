@@ -152,6 +152,10 @@
       "title": "Start here",
       "quickLinks": [
         {
+          "label": "Codes & Redemption",
+          "href": "/guides/survive-your-ideas-codes/"
+        },
+        {
           "label": "How to Play",
           "href": "/guides/getting-started/"
         },
