@@ -312,6 +312,18 @@ function trendingLabel(link: QuickLink): string {
 </LocaleLayout>
 
 <style>
+  :global(main:has(.wiki-hero)) {
+    background:
+      radial-gradient(circle at 22% 38%, #e4d8fa80, transparent 36rem),
+      radial-gradient(circle at 85% 74%, #d7ecd880, transparent 34rem),
+      #fff0df;
+  }
+  :global(.dark main:has(.wiki-hero)) {
+    background:
+      radial-gradient(circle at 22% 38%, #47355780, transparent 36rem),
+      radial-gradient(circle at 85% 74%, #294d4580, transparent 34rem),
+      #262039;
+  }
   .wiki-hero {
     background: radial-gradient(ellipse at 78% 40%, #ffefcf, transparent 55%), #eee6fc;
   }
