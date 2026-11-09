@@ -28,3 +28,10 @@ Questions: What is reported? What is confirmed? How do I redeem it?
 - Official FAQ or patch notes: collect a direct link when available.
 - Community Wiki, player threads and Discord: add topic-specific corroboration when accessible.
 - Steam, Nexus Mods and Steam Workshop: not applicable to the current Roblox scope.
+
+## November 9 follow-up
+
+| Claim | Source URL | Applicable version | Reviewed | Confidence |
+| --- | --- | --- | --- | --- |
+| FIRSTUPDATE appears in multiple public lists | https://www.mrguider.org/roblox/survive-your-ideas-codes/ · https://newgame.co.jp/metaverse/en/roblox/codes/ · https://rblxstat.com/games/10769671316 | Build unknown | 2026-11-09 | Corroborated report. No precise reward, official announcement or in-game redemption verified. Supersedes the single-source note above. |
+| THANKYOU is still reported for five Lucky Spins | https://www.pockettactics.com/survive-your-ideas-codes | Build unknown | 2026-11-09 | Secondary reporting; present-day redemption still untested by this wiki. |

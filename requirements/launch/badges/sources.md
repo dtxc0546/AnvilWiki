@@ -15,3 +15,7 @@ Questions: What triggers each badge? Which conditions must be met in one match?
 | Deadly Idea — eliminate three players with a single word | https://www.roblox.com/badges/2823463248112968 · https://badges.roblox.com/v1/universes/10769671316/badges?limit=10 | Current official badge description | 2026-11-08 | Verified against Roblox badge metadata. No live unlock test. |
 | Collector — discover 150 words in the Word Diary | https://www.roblox.com/badges/3136480215890615 · https://badges.roblox.com/v1/universes/10769671316/badges?limit=10 | Current official badge description | 2026-11-08 | Verified against Roblox badge metadata. No live unlock test. |
 | Veteran — play 100 matches | https://www.roblox.com/badges/2734601290169684 · https://badges.roblox.com/v1/universes/10769671316/badges?limit=10 | Current official badge description | 2026-11-08 | Verified against Roblox badge metadata. No live unlock test. |
+
+| Additional claim | Source URL | Applicable version | Reviewed | Confidence |
+| --- | --- | --- | --- | --- |
+| Welcome is the join badge | https://badges.roblox.com/v1/universes/10769671316/badges?limit=10 | Official badge list | 2026-11-09 | Official badge record with a welcome description. No live unlock test. |
