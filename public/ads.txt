@@ -1,3 +1,1 @@
-# No authorized advertising seller is configured yet.
-# Before ownership verification, insert the exact line supplied by AdSense.
-# Do not publish a placeholder publisher ID.
+google.com, pub-8982004185614384, DIRECT, f08c47fec0942fa0
