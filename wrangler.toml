@@ -34,10 +34,10 @@ PUBLIC_SPONSOR_IMAGE_URL = ""
 # Cloudflare Web Analytics — blank = disabled.
 PUBLIC_CF_BEACON_TOKEN = ""
 # Optional slots (empty = disabled) — fill HERE, not the dashboard:
-#PUBLIC_ADSENSE_CLIENT = ""
-#PUBLIC_ADSENSE_SLOT_STICKY = ""
-#PUBLIC_ADSENSE_SLOT_SIDEBAR = ""
-#PUBLIC_ADSENSE_SLOT_INCONTENT = ""
+PUBLIC_ADSENSE_CLIENT = ""
+PUBLIC_ADSENSE_SLOT_STICKY = ""
+PUBLIC_ADSENSE_SLOT_SIDEBAR = ""
+PUBLIC_ADSENSE_SLOT_INCONTENT = ""
 # Adsterra — for each slot you enable, also create public/ads/<name>.html with
 # the snippet from the Adsterra dashboard (pattern: docs/ads.md 「广告位怎么挂」).
 #PUBLIC_ADSTERRA_SLOT_SIDEBAR_300X250 = ""

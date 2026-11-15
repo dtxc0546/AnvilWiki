@@ -149,19 +149,27 @@
     },
     "popular": {
       "badge": "Guides",
-      "title": "Start here",
+      "title": "Pick a guide",
       "quickLinks": [
-        {
-          "label": "Codes & Redemption",
-          "href": "/guides/survive-your-ideas-codes/"
-        },
         {
           "label": "How to Play",
           "href": "/guides/getting-started/"
         },
         {
-          "label": "Idea and Hazard Tips",
-          "href": "/guides/idea-and-hazard-tips/"
+          "label": "Word Mastery",
+          "href": "/guides/word-mastery/"
+        },
+        {
+          "label": "Word Diary & Collector",
+          "href": "/guides/word-diary/"
+        },
+        {
+          "label": "How to Win Twice in a Row",
+          "href": "/guides/win-streak/"
+        },
+        {
+          "label": "All Badges",
+          "href": "/guides/badges/"
         }
       ]
     },
@@ -174,10 +182,16 @@
     "hero": {
       "badge": "Roblox survival · Unofficial wiki",
       "title": "Survive Your Ideas Wiki",
-      "description": "A word can turn the arena into a hazard. Learn what to do on your writing turn, how to get above lava, and how to keep a route open as new ideas appear.",
+      "description": "Copy reported codes, learn your first round, and find a route out when the island changes.",
       "ctaPrimary": "Play on Roblox",
       "videoId": "",
-      "ctaSecondary": "Read the beginner guide"
+      "ctaSecondary": "Read the beginner guide",
+      "codesPanel": {
+        "title": "Survive Your Ideas Codes",
+        "status": "Six reported codes · Sources reviewed Nov 15, 2026 · Redemption not tested",
+        "guideLabel": "How to redeem codes",
+        "guideHref": "/guides/survive-your-ideas-codes/"
+      }
     },
     "start": {
       "badge": "Quick start",

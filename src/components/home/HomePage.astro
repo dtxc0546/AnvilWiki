@@ -22,7 +22,9 @@ import LocaleLayout from '~/components/layout/LocaleLayout.astro';
 import VideoSection from '~/components/home/VideoSection.astro';
 import QuickStart from '~/components/home/QuickStart.astro';
 import ExploreModules from '~/components/home/ExploreModules.astro';
+import CodeBlock from '~/components/article/CodeBlock.astro';
 import DealsOverview from '~/components/article/DealsOverview.astro';
+import { reportedCodes } from '~/config/reported-codes';
 import { site } from '~/config/site';
 import { NAVIGATION_CONFIG } from '~/config/navigation';
 import { type Locale } from '~/i18n/routing';
@@ -111,56 +113,71 @@ function trendingLabel(link: QuickLink): string {
   <section class="wiki-hero border-b border-border">
     <div class="wiki-hero-layout mx-auto max-w-7xl px-4">
       <div>
-      <p class="wiki-hero-badge">{hero.badge}</p>
-      <h1
-        class="mt-4 max-w-3xl text-4xl font-black tracking-tight text-[#38305b] sm:text-5xl lg:text-7xl"
-      >
-        {hero.title}
-      </h1>
-      <p class="mt-5 max-w-xl text-base text-[#514769] md:text-lg">{hero.description}</p>
-      <div class="mt-8 flex flex-wrap gap-3">
-        {
-          hero.ctaPrimary && (
-            <a
-              href={site.social.official}
-              target="_blank"
-              rel="noopener noreferrer"
-              class="wiki-hero-play"
-            >
-              <Icon name="lucide:play" class="mr-2 h-4 w-4" />
-              {hero.ctaPrimary}
-            </a>
-          )
-        }
-        {
-          hero.ctaSecondary && (
-            <a href={detailPath('guides', 'getting-started', locale)} class="wiki-hero-guides">
-              {hero.ctaSecondary}
-            </a>
-          )
-        }
-        <a href={detailPath('guides', 'survive-your-ideas-codes', locale)} class="wiki-hero-guides">
-          <Icon name="lucide:gift" class="mr-2 h-4 w-4" />
-          Codes &amp; Redemption
+        <p class="wiki-hero-badge">{hero.badge}</p>
+        <h1
+          class="mt-4 max-w-3xl text-4xl font-black tracking-tight text-[#38305b] sm:text-5xl lg:text-6xl"
+        >
+          {hero.title}
+        </h1>
+        <p class="mt-5 max-w-xl text-base text-[#514769] md:text-lg">{hero.description}</p>
+        <div class="mt-5 flex flex-wrap gap-3">
+          {
+            hero.ctaPrimary && (
+              <a
+                href={site.social.official}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="wiki-hero-play"
+              >
+                <Icon name="lucide:play" class="mr-2 h-4 w-4" />
+                {hero.ctaPrimary}
+              </a>
+            )
+          }
+          {
+            hero.ctaSecondary && (
+              <a href={detailPath('guides', 'getting-started', locale)} class="wiki-hero-guides">
+                {hero.ctaSecondary}
+              </a>
+            )
+          }
+        </div>
+        <div class="wiki-hero-art" aria-hidden="true">
+          <svg viewBox="0 0 320 256" fill="none" shape-rendering="crispEdges">
+            <path d="M16 144h16v-12h40v-12h52v-12h76v12h48v12h40v12h16v52h-16v12h-40v12h-48v12h-76v-12H72v-12H32v-12H16Z" fill="#f7b9a6"/>
+            <path d="M16 144h16v-12h40v-12h52v-12h76v12h48v12h40v12h16v32h-16v12h-40v12h-48v12h-76v-12H72v-12H32v-12H16Z" fill="#ffdcc3"/>
+            <path d="M56 148h24v-12h48v-12h68v12h48v12h24v24h-24v12h-48v12h-68v-12H80v-12H56Z" fill="#a5d8ad"/>
+            <path d="M84 157h20v8H84Zm140 3h20v8h-20Zm-92 23h16v8h-16Z" fill="#74af91"/>
+            <path d="M101 134v-12h12v-12h16v24Zm101 8v-12h12v-12h16v24Z" fill="#fff0dc"/>
+            <path d="M124 80h12V56h16V44h36v12h16v24h12v64h-12v12h-68v-12h-12Z" fill="#52426e"/>
+            <path d="M136 84h12V68h8V56h28v12h8v16h12v52h-12v8h-44v-8h-12Z" fill="#f4e3ff"/>
+            <path d="M144 88h52v32h-8v12h-36v-12h-8Z" fill="#fff8ed"/>
+            <path d="M152 96h8v12h-8Zm28 0h8v12h-8Zm-16 20h12v4h-12Z" fill="#52426e"/>
+            <path d="M144 109h8v6h-8Zm44 0h8v6h-8Z" fill="#ef9eb8"/>
+            <path d="M248 56h8V44h8v12h12v8h-12v12h-8V64h-8ZM62 75h8V63h8v12h12v8H78v12h-8V83h-8Z" fill="#d48cad"/>
+            <path d="M228 27h8v8h-8ZM99 43h8v8h-8Zm-53 73h8v8h-8Zm232-18h8v8h-8Z" fill="#8d72bd"/>
+          </svg>
+        </div>
+      </div>
+      <section id="codes" class="wiki-codes rounded-2xl border border-border bg-card p-4 text-foreground sm:p-6" aria-labelledby="home-codes-title">
+        <div class="flex items-center gap-2">
+          <Icon name="lucide:gift" class="h-5 w-5 shrink-0 text-nav" />
+          <h2 id="home-codes-title" class="text-xl font-bold">{hero.codesPanel.title}</h2>
+        </div>
+        <p class="mt-2 text-sm text-muted-foreground">{hero.codesPanel.status}</p>
+        <ul class="mt-4 grid gap-3">
+          {reportedCodes.map(({ code, reward }) => (
+            <li>
+              <CodeBlock code={code} />
+              <p class="mt-1 text-sm text-muted-foreground">{reward}</p>
+            </li>
+          ))}
+        </ul>
+        <a href={localizePath(hero.codesPanel.guideHref, locale)} class="mt-4 inline-flex min-h-11 items-center gap-2 font-semibold text-nav underline underline-offset-4">
+          {hero.codesPanel.guideLabel}
+          <Icon name="lucide:arrow-right" class="h-4 w-4" />
         </a>
-      </div>
-      </div>
-      <div class="wiki-hero-art" aria-hidden="true">
-        <svg viewBox="0 0 320 256" fill="none" shape-rendering="crispEdges">
-          <path d="M16 144h16v-12h40v-12h52v-12h76v12h48v12h40v12h16v52h-16v12h-40v12h-48v12h-76v-12H72v-12H32v-12H16Z" fill="#f7b9a6"/>
-          <path d="M16 144h16v-12h40v-12h52v-12h76v12h48v12h40v12h16v32h-16v12h-40v12h-48v12h-76v-12H72v-12H32v-12H16Z" fill="#ffdcc3"/>
-          <path d="M56 148h24v-12h48v-12h68v12h48v12h24v24h-24v12h-48v12h-68v-12H80v-12H56Z" fill="#a5d8ad"/>
-          <path d="M84 157h20v8H84Zm140 3h20v8h-20Zm-92 23h16v8h-16Z" fill="#74af91"/>
-          <path d="M101 134v-12h12v-12h16v24Zm101 8v-12h12v-12h16v24Z" fill="#fff0dc"/>
-          <path d="M124 80h12V56h16V44h36v12h16v24h12v64h-12v12h-68v-12h-12Z" fill="#52426e"/>
-          <path d="M136 84h12V68h8V56h28v12h8v16h12v52h-12v8h-44v-8h-12Z" fill="#f4e3ff"/>
-          <path d="M144 88h52v32h-8v12h-36v-12h-8Z" fill="#fff8ed"/>
-          <path d="M152 96h8v12h-8Zm28 0h8v12h-8Zm-16 20h12v4h-12Z" fill="#52426e"/>
-          <path d="M144 109h8v6h-8Zm44 0h8v6h-8Z" fill="#ef9eb8"/>
-          <path d="M248 56h8V44h8v12h12v8h-12v12h-8V64h-8ZM62 75h8V63h8v12h12v8H78v12h-8V83h-8Z" fill="#d48cad"/>
-          <path d="M228 27h8v8h-8ZM99 43h8v8h-8Zm-53 73h8v8h-8Zm232-18h8v8h-8Z" fill="#8d72bd"/>
-        </svg>
-      </div>
+      </section>
     </div>
   </section>
 
@@ -335,7 +352,7 @@ function trendingLabel(link: QuickLink): string {
     display: grid;
     align-items: center;
     gap: 1.5rem;
-    padding-block: clamp(2.5rem, 6vw, 5.5rem);
+    padding-block: clamp(1.5rem, 4vw, 3.5rem);
   }
   .wiki-hero-badge {
     display: inline-flex;
@@ -359,12 +376,11 @@ function trendingLabel(link: QuickLink): string {
   .wiki-hero-play:hover { background: #503c7d; }
   .wiki-hero-guides { border: 1px solid #9d83bf; color: #463368; }
   .wiki-hero-guides:hover { background: #f8efff; }
-  .wiki-hero-art { border-radius: 2rem; background: #fff9ee90; border: 2px solid #fff9ee; box-shadow: 0 6px 0 #cdb9e85c; }
-  .wiki-hero-art svg { display: block; width: min(100%, 26rem); margin-inline: auto; }
+  .wiki-codes { box-shadow: 0 0.4rem 0 hsl(var(--brand-h) var(--brand-s) 50% / 0.18); }
+  .wiki-hero-art { display: none; }
   @media (min-width: 768px) {
     .wiki-hero-layout { grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); }
-  }
-  @media (max-width: 767px) {
-    .wiki-hero-art svg { width: min(100%, 15rem); }
+    .wiki-hero-art { display: block; margin-top: 0.75rem; }
+    .wiki-hero-art svg { display: block; width: 7rem; }
   }
 </style>

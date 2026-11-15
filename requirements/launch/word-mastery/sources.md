@@ -20,3 +20,10 @@ Questions: Where is it? What are the requirements and rewards?
 - Official FAQ or patch notes: collect a direct link when available.
 - Community Wiki, player threads and Discord: add topic-specific corroboration when accessible.
 - Steam, Nexus Mods and Steam Workshop: not applicable to the current Roblox scope.
+
+## November 9 follow-up
+
+| Claim | Source URL | Applicable version | Reviewed | Confidence |
+| --- | --- | --- | --- | --- |
+| Mastery quests can unlock stronger versions of words with a new look | https://www.roblox.com/events/5452288231167099473 · https://apis.roblox.com/virtual-events/v1/universes/10769671316/virtual-events | November 7 event announcement | 2026-11-09 | Official announcement checked through Roblox event API. Exact quests, UI and rollout by server untested. |
+| The same update announces 40+ new words, island changes, balancing and a VIP control panel | https://www.roblox.com/events/5452288231167099473 | November 7 event announcement | 2026-11-09 | Official announcement; no complete word list or exact stat changes provided. |

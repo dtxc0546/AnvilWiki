@@ -78,7 +78,7 @@ export const site: SiteConfig = {
   legalNotice: 'Survive Your Ideas Wiki is an unofficial fan site and is not affiliated with Roblox or the game creator.',
   // Set a real address if you run no social channels — the contact page
   // renders it as a mailto link.
-  contactEmail: '',
+  contactEmail: 'destinywxc@gmail.com',
   social: {
     official: 'https://www.roblox.com/games/77900175935766/Survive-Your-Ideas',
   },
