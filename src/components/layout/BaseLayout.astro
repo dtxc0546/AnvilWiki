@@ -237,6 +237,8 @@ const privacyLabel = consent?.privacyLabel ?? footerStrings.privacyPolicy ?? 'Pr
     {/* Theme color (browser chrome) is injected by the runtime script below —
         meta content is a plain string where var() never resolves. */}
 
+    {adsenseClient && /^ca-pub-\d{16}$/.test(adsenseClient) && <meta name="google-adsense-account" content={adsenseClient} />}
+
     {/* Google Search Console verification (optional) */}
     {gscVerification && <meta name="google-site-verification" content={gscVerification} />}
 
