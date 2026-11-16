@@ -1,0 +1,16 @@
+---
+import { getUi } from '~/i18n/ui';
+import { defaultLocale } from '~/i18n/routing';
+const labels = getUi(defaultLocale).shared.optionalAdvertising;
+const enabled = !!import.meta.env.PUBLIC_ADSTERRA_SLOT_ARTICLE_300X250;
+---
+{enabled && <>
+<link rel="stylesheet" href="/banner.css" />
+<section data-optional-banner aria-label={labels.label}>
+<small>{labels.label}</small>
+<div data-ad-choice><p>{labels.text} <a href="/privacy-policy/">{labels.privacy}</a></p><button type="button" data-ad-accept>{labels.accept}</button><button type="button" data-ad-reject>{labels.reject}</button></div>
+<div data-ad-frame hidden><iframe data-src="/ads/banner.htm" title={labels.label} loading="lazy" sandbox="allow-scripts allow-same-origin allow-popups allow-forms"></iframe></div>
+<button type="button" data-ad-settings hidden>{labels.settings}</button>
+</section>
+<script is:inline src="/banner.js" defer></script>
+</>}

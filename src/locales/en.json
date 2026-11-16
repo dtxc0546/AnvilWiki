@@ -131,7 +131,15 @@
     "feedbackNo": "No",
     "breadcrumbAria": "Breadcrumb",
     "wikiNavAria": "Wiki navigation",
-    "paginationAria": "Article pagination"
+    "paginationAria": "Article pagination",
+    "optionalAdvertising": {
+      "label": "Advertisement",
+      "text": "This optional Adsterra banner may use advertising cookies and share device and browsing data with advertising partners. Your choice does not affect access to this guide.",
+      "accept": "Allow advertising cookies",
+      "reject": "Decline advertising cookies",
+      "settings": "Change advertising choice",
+      "privacy": "Privacy details"
+    }
   },
   "overview": {
     "guides": {

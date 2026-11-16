@@ -15,6 +15,7 @@
 import { Icon } from 'astro-icon/components';
 import { render } from 'astro:content';
 import LocaleLayout from '~/components/layout/LocaleLayout.astro';
+import OptionalBanner from '~/components/ads/OptionalBanner.astro';
 import InContentAd from '~/components/ads/InContentAd.astro';
 import MobileAnchorAd from '~/components/ads/MobileAnchorAd.astro';
 import AdsterraSlotPair from '~/components/ads/AdsterraSlotPair.astro';
@@ -447,6 +448,7 @@ const jsonLd = [
 
     {/* In-content ad before related articles */}
     <InContentAd />
+    <OptionalBanner />
     {/* Adsterra pair: 728×90 here, responsive native after the Related
         section (end-of-content position) — same DOM order as before. */}
     <AdsterraSlotPair>

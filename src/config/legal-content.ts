@@ -47,7 +47,7 @@ export const legalContent = {
   "privacy-policy": [
     {
       "title": "Scope and review date",
-      "body": "This policy covers Survive Your Ideas Wiki and was reviewed November 15, 2026. Articles are publicly readable without registration. The site does not host a Roblox login or collect Roblox passwords."
+      "body": "This policy covers Survive Your Ideas Wiki and was reviewed November 16, 2026. Articles are publicly readable without registration. The site does not host a Roblox login or collect Roblox passwords."
     },
     {
       "title": "Hosting and request information",
@@ -60,6 +60,10 @@ export const legalContent = {
     {
       "title": "Advertising partners",
       "body": "The site is preparing for Google AdSense. No Google advertising is enabled in the current published configuration. If enabled, Google and its partners may use cookies, web beacons, IP addresses and related identifiers to deliver and measure ads. Google advertising cookies can enable advertising based on visits to this and other sites. See <a href=\"https://policies.google.com/technologies/partner-sites\">how Google uses information from partner sites</a> and <a href=\"https://myadcenter.google.com/\">My Ad Center</a> for personalization controls."
+    },
+    {
+      "title": "Optional Adsterra banners",
+      "body": "One fixed 300 × 250 Adsterra banner may appear after an article. It loads only after you choose “Allow advertising cookies” and approach the placement. You may decline and keep reading. Adsterra and its partners may process IP address, browser/device details, referrer and advertising interactions, and use cookies or similar identifiers for ad delivery and measurement. See <a href=\"https://adsterra.com/privacy-policy/\">Adsterra’s privacy policy</a>. The operator receives aggregated performance reports. Use “Change advertising choice” beside a banner to withdraw permission and unload the banner. This stops further loading but does not erase third-party cookies already stored; browser settings can clear them. This advertising choice is separate from analytics preferences. Adsterra support confirmed filtering adult/erotic, gambling, dating, misleading downloads/software warnings and animated campaigns on November 16, 2026. Filtering depends on the provider’s classification and enforcement; report inappropriate ads through our contact page."
     },
     {
       "title": "Consent and choices",
