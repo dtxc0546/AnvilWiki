@@ -266,6 +266,27 @@
               "detail": "Recheck your route after each new idea."
             }
           ]
+        },
+        {
+          "order": 2,
+          "name": "Anime Crusaders X: codes & beginner guide",
+          "description": "A separate Roblox tower defense guide: reported codes, level gates and first-team planning.",
+          "href": "/guides/anime-crusaders-x/",
+          "displayType": "steps",
+          "highlights": [
+            {
+              "label": "Copy",
+              "detail": "Five codes compared across two current sources."
+            },
+            {
+              "label": "Check",
+              "detail": "Level requirements and redemption troubleshooting."
+            },
+            {
+              "label": "Plan",
+              "detail": "A practical first-team and reward-spending checklist."
+            }
+          ]
         }
       ]
     },

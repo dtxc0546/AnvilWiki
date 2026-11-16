@@ -7,7 +7,7 @@ export const legalContent = {
     },
     {
       "title": "What this site covers",
-      "body": "Our current guides cover the round loop, writing turns, word examples, hazard decisions, items, badges, Word Diary, Word Mastery and reported redemption codes. We publish practical checklists and comparison worksheets alongside source-linked feature explanations."
+      "body": "Our current guides cover the round loop, writing turns, word examples, hazard decisions, items, badges, Word Diary, Word Mastery and reported redemption codes. We publish practical checklists and comparison worksheets alongside source-linked feature explanations. We also publish clearly identified guides to selected other Roblox experiences, including Anime Crusaders X by 32x. These games have separate codes and mechanics; cross-game coverage does not imply developer affiliation."
     },
     {
       "title": "How we check information",
