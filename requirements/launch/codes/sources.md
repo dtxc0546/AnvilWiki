@@ -35,3 +35,12 @@ Questions: What is reported? What is confirmed? How do I redeem it?
 | --- | --- | --- | --- | --- |
 | FIRSTUPDATE appears in multiple public lists | https://www.mrguider.org/roblox/survive-your-ideas-codes/ · https://newgame.co.jp/metaverse/en/roblox/codes/ · https://rblxstat.com/games/10769671316 | Build unknown | 2026-11-09 | Corroborated report. No precise reward, official announcement or in-game redemption verified. Supersedes the single-source note above. |
 | THANKYOU is still reported for five Lucky Spins | https://www.pockettactics.com/survive-your-ideas-codes | Build unknown | 2026-11-09 | Secondary reporting; present-day redemption still untested by this wiki. |
+
+## November 16 follow-up
+
+| Claim | Source URL | Applicable version | Reviewed | Confidence |
+| --- | --- | --- | --- | --- |
+| The live experience description has no code announcement; the community description has none and its shout is null | https://games.roblox.com/v1/games?universeIds=10769671316 · https://groups.roblox.com/v1/groups/1111201510 | Live metadata, build unknown | 2026-11-16 | Direct official metadata check. Does not establish absence of Discord or other announcements. |
+| 100KCCU rewards conflict: PGG says 5 Lucky Spins, Radio Times says 10 | https://progameguides.com/roblox/survive-your-ideas-codes/ · https://www.radiotimes.com/technology/gaming/survive-your-ideas-codes/ | Reports November 14 and 16 | 2026-11-16 | Conflicting secondary reports; redemption untested. |
+| 1MMEMBERS spin type conflicts: PGG says Lucky Spins, Radio Times and Bloxodes say Spins | https://progameguides.com/roblox/survive-your-ideas-codes/ · https://www.radiotimes.com/technology/gaming/survive-your-ideas-codes/ · https://bloxodes.com/codes/survive-your-ideas | Build unknown | 2026-11-16 | Count 20 reported; type unresolved. |
+| FIRSTUPDATE is reported expired by Radio Times but listed by PGG and Bloxodes | https://www.radiotimes.com/technology/gaming/survive-your-ideas-codes/ · https://progameguides.com/roblox/survive-your-ideas-codes/ · https://bloxodes.com/codes/survive-your-ideas | Build unknown | 2026-11-16 | Availability disputed; no expiry inferred. |

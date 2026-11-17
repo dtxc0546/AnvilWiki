@@ -1,12 +1,12 @@
-/** Source review 2026-11-15; public reports, not redeemed by this wiki. */
+/** Source review 2026-11-16; public reports, not redeemed by this wiki. */
 export const reportedCodes = [
   {
     "code": "100KCCU",
-    "reward": "5 Lucky Spins (reported)"
+    "reward": "Reward disputed: 5 or 10 Lucky Spins (reported)"
   },
   {
     "code": "1MMEMBERS",
-    "reward": "20 Lucky Spins (reported)"
+    "reward": "20 spins; spin type disputed"
   },
   {
     "code": "SATURDAYISTHEDAY",
@@ -18,7 +18,7 @@ export const reportedCodes = [
   },
   {
     "code": "FIRSTUPDATE",
-    "reward": "5 Lucky Spins (reported)"
+    "reward": "5 Lucky Spins reported; availability disputed"
   },
   {
     "code": "NEWMAPSCOMING",
