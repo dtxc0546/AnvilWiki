@@ -23,3 +23,9 @@ Questions: Where do I wait? What is the writer prompt? What happens next?
 - Official FAQ or patch notes: collect a direct link when available.
 - Community Wiki, player threads and Discord: add topic-specific corroboration when accessible.
 - Steam, Nexus Mods and Steam Workshop: not applicable to the current Roblox scope.
+
+## November 16 maintenance
+
+| Claim | Source | Version | Reviewed | Confidence |
+| --- | --- | --- | --- | --- |
+| three maps, votes and ten additional words | https://www.roblox.com/events/3092474469241979532 | Public version unconfirmed | 2026-11-16 | Official announcement; gameplay untested |

@@ -27,3 +27,9 @@ Questions: Where is it? What are the requirements and rewards?
 | --- | --- | --- | --- | --- |
 | Mastery quests can unlock stronger versions of words with a new look | https://www.roblox.com/events/5452288231167099473 · https://apis.roblox.com/virtual-events/v1/universes/10769671316/virtual-events | November 7 event announcement | 2026-11-09 | Official announcement checked through Roblox event API. Exact quests, UI and rollout by server untested. |
 | The same update announces 40+ new words, island changes, balancing and a VIP control panel | https://www.roblox.com/events/5452288231167099473 | November 7 event announcement | 2026-11-09 | Official announcement; no complete word list or exact stat changes provided. |
+
+## November 16 maintenance
+
+| Claim | Source | Version | Reviewed | Confidence |
+| --- | --- | --- | --- | --- |
+| map-specific events and separate Mastery quests | https://www.roblox.com/events/5452288231167099473 | Public version unconfirmed | 2026-11-16 | Official announcement; gameplay untested |

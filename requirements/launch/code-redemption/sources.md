@@ -20,3 +20,9 @@ Questions: Where is the panel? How do I interpret its response?
 - Official FAQ or patch notes: collect a direct link when available.
 - Community Wiki, player threads and Discord: add topic-specific corroboration when accessible.
 - Steam, Nexus Mods and Steam Workshop: not applicable to the current Roblox scope.
+
+## November 16 maintenance
+
+| Claim | Source | Version | Reviewed | Confidence |
+| --- | --- | --- | --- | --- |
+| FIRSTUPDATE and reward-counter conflicts | https://www.radiotimes.com/technology/gaming/survive-your-ideas-codes/ | Public version unconfirmed | 2026-11-16 | Secondary-source report; redemption untested |
